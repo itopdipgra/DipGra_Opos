@@ -20176,7 +20176,7 @@ function nombreBloque(cod){ return (BANCO.meta.bloques && BANCO.meta.bloques[cod
 
 // Etiqueta de tema usable como clave (los null pasan a "(sin tema)")
 const SIN_TEMA = "·sin·";
-function temaDe(p){ return p.tema || SIN_TEMA; }
+function temaDe(p){ return (p.tema===null || p.tema===undefined || p.tema==="") ? SIN_TEMA : String(p.tema); }
 
 /* Construye el árbol: { comun:{bloque:{tema:count}}, especifica:{...} } solo con lo que pasa origen */
 function construirArbol(){

@@ -1,6 +1,6 @@
 // Service worker — Test ITOP PWA
 // Cachea los recursos de la app para que funcione sin conexión.
-const CACHE = "itop-test-v1";
+const CACHE = "itop-test-v2";
 const RECURSOS = [
   "./",
   "./index.html",
